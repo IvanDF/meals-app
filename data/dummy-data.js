@@ -2,16 +2,66 @@ import Category from "../models/category";
 import Meal from "../models/meal";
 
 export const CATEGORIES = [
-  new Category("c1", "Italian", "#f5428d"),
-  new Category("c2", "Quick & Easy", "#f54242"),
-  new Category("c3", "Hamburgers", "#f5a442"),
-  new Category("c4", "German", "#f5d142"),
-  new Category("c5", "Light & Lovely", "#368dff"),
-  new Category("c6", "Exotic", "#41d95d"),
-  new Category("c7", "Breakfast", "#9eecff"),
-  new Category("c8", "Asian", "#b9ffb0"),
-  new Category("c9", "French", "#ffc7ff"),
-  new Category("c10", "Summer", "#47fced"),
+  new Category(
+    "c1",
+    "Italian",
+    "#f5428d",
+    "https://pixabay.com/get/g9bffc2a8b7b6faf1448aa3aacaa25a8d4c812179524c04447ddf077fcc8e6aaaab6e59ad77a8edd6899c0e7bec4f8fee2ae27bd5a9a48f75a6b59a1910876ab882bea37e216481061bd10c92589006c5_1920.jpg"
+  ),
+  new Category(
+    "c2",
+    "Quick & Easy",
+    "#f54242",
+    "https://pixabay.com/get/ge7f4274c9fcf5e5b012a86004c679154b67ee664dbee04ea7e762d10bb71602bf6e74b46dd885fc7f5ecc2837f739f78d97b1214f0d8371bc13d5fb46f8056b132168b4cfbb29c309829481e53f9298c_1920.jpg"
+  ),
+  new Category(
+    "c3",
+    "Hamburgers",
+    "#f5a442",
+    "https://pixabay.com/get/g7e11e76910b5ed91844e22b45f99f8b0aeff13ef70146391bcc0b08af1afb6872d8390bb496b23df9a056559bdf954601370ea8996af85927434c94304ea4aca515f89ecb6618c8e0cd73f98c8dc652f_1920.jpg"
+  ),
+  new Category(
+    "c4",
+    "German",
+    "#f5d142",
+    "https://pixabay.com/get/g1c6f53d492940dc80fab08b1491f34f4d6d192423b8631afe6d2b73b6345cbed8bf6f0c972a120db3f302d95668b209a5abbd2dd32cf956d97371d0350bef52d89e7e0a914b1cb0a68fce5b7a65b0489_1920.jpg"
+  ),
+  new Category(
+    "c5",
+    "Light & Lovely",
+    "#368dff",
+    "https://pixabay.com/get/g2d12da0316fee8765adca712f928e55b1061d562a0d587427fc57f9429fec167ba1393245101ff542582dbe16550e44bf5dffbf459e6c524305c69ed6686ad0861faac011e1269b20171ab5eb74c54bd_1920.jpg"
+  ),
+  new Category(
+    "c6",
+    "Exotic",
+    "#41d95d",
+    "https://pixabay.com/get/g424def55167e89269c781ffde890b06cf70234850831a0bf77288ed974808b1f27ff454e8a4e5247b2c5297e6da9112ff6800c1cb5618e37a17b6e7cfbbc78c5cc53f446c5728bf20513b41940d8d8d5_1920.jpg"
+  ),
+  new Category(
+    "c7",
+    "Breakfast",
+    "#9eecff",
+    "https://pixabay.com/get/gf5792937355f32784260b374b671ae6e18455f90eb106e3ac6a615e1a7a026d8ea8972061193abe0ef04e57c594552de91a72bb83b8ad3890ac8d59d1d82990d8307c330d018f47e989385fb679bfd6e_1920.jpg"
+  ),
+  new Category(
+    "c8",
+    "Asian",
+    "#b9ffb0",
+    "https://pixabay.com/get/g411f8634ec54daff9580b208ad17d0f471d06ebca7c92667f8e7376986e7b9ceb4eb88771ab106b16eac4c8f1dbf4794bfbf693506aaaed12a76d7a233dedd1bf108b892470aef33832a6a869e2f02a1_1920.jpg"
+  ),
+  new Category(
+    "c9",
+    "French",
+    "#ffc7ff",
+    "https://pixabay.com/get/gd866ec65e940d2850581d1add1dc36d1a8a835c28481e894fe0a388574d645637107bbc87b398f0b17527be4933860bcf1adc50158bcc4823e8ad7ff0929f1700897d8f58b00ce1532a409d9597dcc29_1920.jpg"
+  ),
+  new Category(
+    "c10",
+    "Summer",
+    "#47fced",
+    "https://pixabay.com/get/g298cec329c261261c431b243cddfeead41587783d506e39fc4664bc8f4b42790d7062781dfcb86d3f7c8da28f81e7490acf771fa973ca80957b7b43dd1e50770bab92d5aafaa05bb7994c9ac0a01dcb6_1920.jpg"
+  ),
 ];
 
 export const MEALS = [
