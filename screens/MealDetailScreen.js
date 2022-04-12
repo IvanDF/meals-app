@@ -1,21 +1,30 @@
 import { StatusBar } from "expo-status-bar";
-import { useLayoutEffect } from "react";
+import { useContext, useLayoutEffect } from "react";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import IconButton from "../components/IconButton";
 import MealDetail from "../components/MealDetail";
 import List from "../components/MealDetail/List";
 import Subtitle from "../components/MealDetail/Subtitle";
 import { MEALS } from "../data/dummy-data";
+import { FavouritesConext } from "../store/context/favourite-context";
 
 function MealDetailScreen({ route, navigation }) {
+  const favouriteMealsCtx = useContext(FavouritesConext);
+
   const mealId = route.params.mealId;
   const mealTitle = route.params.mealTitle;
   const catColor = route.params.catColor;
 
   const selectedMeal = MEALS.find((meal) => meal.id === mealId);
 
+  const mealIsFavourite = favouriteMealsCtx.ids.includes(mealId);
+
   function headerButtonPressHandler() {
-    console.log("Pressed");
+    if (mealIsFavourite) {
+      favouriteMealsCtx.removeFavourite(mealId);
+    } else {
+      favouriteMealsCtx.addFavourite(mealId);
+    }
   }
 
   // Execute all before the component render
@@ -26,7 +35,7 @@ function MealDetailScreen({ route, navigation }) {
       headerTintColor: "#000000",
       headerRight: () => (
         <IconButton
-          icon="star"
+          icon={mealIsFavourite ? "star" : "star-outline"}
           color="#000"
           onPress={headerButtonPressHandler}
         />
